@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title> Contact Book Page</title>
+    {% endif %}    
+</head>
+<body>
+    <h1>Contact Book</h1>
+    {% for contact in contacts %}
+        <h2>{{ contact.name }}</h2>
+        <p>{{ contact.phone}}</p>
+        <p>{{ contact.city }}</p>
+    {% endfor %}
+</body>
+</html>
