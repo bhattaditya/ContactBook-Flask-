@@ -1,0 +1,5 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <h3>Welcome {{ current_user.username }}!</h3>
+    <a href="#">{{ current_user.email }}</a>
+{% endblock content %}
