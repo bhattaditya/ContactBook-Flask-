@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {% for contact in contacts %}
+        <article class="media content-section">
+            <div class="media-body">
+              <div class="article-metadata">
+                <a class="mr-2" href="#">{{ contact.name }}</a>
+                <small class="text-muted">{{ contact.phone}}</small>
+              </div>
+              <p class="article-content">{{ contact.city }}</p>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
